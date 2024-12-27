@@ -65,7 +65,10 @@ body {
 
       .navbar-brand {
         img {
-          max-height: 50px;
+          width: 300px;
+          @media screen and (max-width: 600px) {
+            width: 200px;
+          }
         }
       }
 

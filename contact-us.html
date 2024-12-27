@@ -31,6 +31,7 @@ Wags & Whiskers by Cori & Brody
  
      <!-- Stylesheets -->
      <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <link rel="stylesheet" href="./css/form.css">
      <link rel="stylesheet" href="./css/main.min.css">
    </head>
  
@@ -71,23 +72,107 @@ Wags & Whiskers by Cori & Brody
         </nav>
 
         <section>
-          <div class="container" style="height: 1000vh;">
+          <div class="container">
             <div class="row">
               <div class="col">
-                <h1>Contact Page</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nemo eos autem explicabo delectus veritatis doloribus possimus atque cumque similique, distinctio porro et optio laboriosam veniam facilis vitae. Praesentium earum modi vel commodi laudantium nisi harum sunt, consequatur facere debitis suscipit quibusdam excepturi rerum maiores, sit ad totam eos sequi.</p>
+                <h1>questions or inquries? send us an email!</h1>
+
+                  <div id="status"></div>
+
+                  <form id="contact-form" class="fade-out contain">
+
+                      <input type="hidden" name="source" value="petsitters">
+
+                      <!-- Honeypot field for bots -->
+                      <div style="display: none;">
+                          <label for="website">If you are human, leave this field blank.</label>
+                          <input type="text" id="website" name="website">
+                      </div>
+
+                      <fieldset>
+
+                          <div class="grid2">
+
+                              <div>
+                                  <label for="first-name">First Name <span>*</span></label>
+                                  <input type="text" id="first-name" name="first-name" class="req" required>
+                              </div>
+                              <div>
+                                  <label for="last-name">Last Name <span>*</span></label>
+                                  <input type="text" id="last-name" name="last-name" class="req" required>
+                              </div>
+
+                          </div>
+
+                          <div class="grid2">
+
+                              <div>
+                                  <label for="email">Email <span>*</span></label>
+                                  <input type="text" id="email" name="email" class="req" required>
+                              </div>
+                              <div>
+                                  <label for="phone">Phone</label>
+                                  <input type="text" id="phone" name="phone">
+                              </div>
+
+                          </div>
+
+                          <div>
+
+                              <label for="message">Message</label>
+                              <textarea id="message" name="message"></textarea>
+
+                          </div>
+
+                      </fieldset>
+
+                      <button type="submit">submit contact message</button>
+
+                  </form>
               </div>
             </div>
           </div>
         </section>
  
      </main>
+
+     <footer id="contact">
+         <div class="contact-wrapper text-center p-4">
+             <!-- Image -->
+             <div class="mb-3">
+                 <img
+                         src="./img/contact.png"
+                         alt="Contact Icon"
+                         class="img-fluid"
+                         style="width: 90px; height: 90px;"
+                 >
+             </div>
+
+             <!-- Heading -->
+             <h4 class="mb-3">Contact Us</h4>
+
+             <!-- Contact Details -->
+             <div>
+                 <p>
+                     <a href="tel:5555555555" class="text-decoration-none">Cori & Brody: 555-555-5555</a>
+                 </p>
+                 <p>
+                     <a href="mailto:Cori&Brody@gmail.com" class="text-decoration-none">Cori&Brody@gmail.com</a>
+                 </p>
+             </div>
+         </div>
+         <div class="copy">
+             <p>&copy; <span id="currentYear"></span></p>
+         </div>
+     </footer>
  
    </body>
  
    <script src="js/jquery-3.6.3.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script src="js/main.js"></script>
+   <script src="js/validate-email.js"></script>
+   <script src="js/submit-form.js"></script>
    <script>
  
    </script>
