@@ -32,6 +32,26 @@ Wags & Whiskers by Cori & Brody
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
+
+    <style>
+      .carousel {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        height: 400px;
+        width: 100%;
+      }
+      .carousel img {
+        max-height: 400px;
+      }
+
+      @media (max-width: 768px) {
+        .carousel {
+          width: 100%;
+        }
+      }
+
+    </style>
   </head>
 
   <body>
@@ -75,18 +95,68 @@ Wags & Whiskers by Cori & Brody
           <div class="row">
             <!-- Image Column -->
             <div class="offset-md-1 col-md-6">
-                <img src="https://sarashappypaws.com/wp-content/uploads/2021/12/Saras-Happy-Paws-Pet-Sitting.-Best-pet-sitters-in-la-verkin-utah.-best-pet-sitters-in-ivins-utah.-best-pet-sitters-in-st.george-utah.-best-pet-sitters-in-hurricane-utah.jpg" 
-                  alt="Saras Happy Paws Pet Sitting. Best pet sitters in la verkin utah. best pet sitters in ivins utah. best pet sitters in st.george utah. best pet sitters in hurricane utah" 
-                  class="img-fluid">
+              <div id="testimonialCarousel-hi" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                  <!-- First Image -->
+                  <div class="carousel-item active">
+                    <img src="./img/home/pv1.jpg" class="d-block w-100" alt="Boon & Naia" />
+                  </div>
+                  <!-- Second Image -->
+                  <div class="carousel-item">
+                    <img src="./img/home/pv2.jpg" class="d-block w-100" alt="Brody & Naia" />
+                  </div>
+                  <!-- Third Image -->
+                  <div class="carousel-item">
+                    <img src="./img/home/pv3.png" class="d-block w-100" alt="Brody & Neko" />
+                  </div>
+                  <!-- Fourth Image -->
+                  <div class="carousel-item">
+                    <img src="./img/home/pv4.png" class="d-block w-100" alt="Neko, Lola & Cori" />
+                  </div>
+                  <!-- Fifth Image -->
+                  <div class="carousel-item">
+                    <img src="./img/home/pv5.jpg" class="d-block w-100" alt="Lola & Neko" />
+                  </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel-hi" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel-hi" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
           
             <!-- Text and Button Column -->
             <div class="col-md-4">
               <h1><a href="./contact-us.html">Highly-Trusted Pet Sitters</a></h1>
-              <p>At Sara’s Happy Paws we believe a good pet sitter is one you can trust with your animals and your home. We only hire those we can truly stand behind, and know will take wonderful care of your furry family. This includes two members of our family and a very close friend. We <a href="./contact-us.html">only hire the best of the best</a>, and of course, people we know very well whom we can trust with your pets.</p>
+              <p>Hi! We’re Cori, a college librarian (42), and Brody, a computer programmer (37) from upstate New York, USA. We’re passionate about spending time with animals and would love to care for your pets!</p>
               <a href="./contact-us.html" class="btn btn-primary">Contact Us</a>
             </div>
           </div>        
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p>Both of us grew up with dogs—Brody with small breeds and Cori with large breeds (and cats, too). In 2021, we lost our 14-year-old rescue dog, Naia, which was a heartbreaking loss for our little family. This is when we started pet-sitting, as a way to travel and get our much-needed dog time. Then, in June 2022, we adopted two rescue dogs, Neko and Lola, who are now part of our family. They enjoy staying with Cori’s parents when we’re away, which lets us continue pet-sitting occasionally, though less often.</p>
+
+              <p>Over the years, we’ve shared our home with many beloved pets, and have been fortunate to care for our dogs into their golden years, gaining plenty of experience with older animals and their unique needs.</p>
+
+              <p>We both work remotely, which makes it easy to care for pets while traveling. We've enjoyed pet-sitting for many families, loving the chance to explore new neighborhoods and connect with different animals. We value inclusivity and diversity, open-mindedness, and warmly welcome people and pets from all backgrounds into our lives.</p>
+
+              <p>We organize our pet-sits through email or the TrustedHousesitters website—feel free to contact us either way! We’re proud to have all five-star reviews on TrustedHousesitters and treat every home with the utmost care and respect. For us, pet-sitting is a sustainable and fulfilling way to travel, immerse ourselves in local communities, and enjoy the company of animals.</p>
+
+              <p>If you’d like to chat more about your pets, we’d be happy to arrange a video call to discuss your needs. Be sure to check out our “Testimonials” page for reviews and the “Gallery” for photos of our furry friends. We can’t wait to connect with you!</p>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       
