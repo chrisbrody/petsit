@@ -58,7 +58,7 @@ $('form').on('submit', function(e) {
             .then(response => {
                 const status = document.getElementById("status");
                 if (response.ok) {
-                    status.innerHTML = "<p>Thank you for reaching out. We will respond to you shortly.</p>";
+                    status.innerHTML = "<p style='text-align: center;'>Thank you for reaching out. We will respond to you shortly.</p>";
                     status.style.display = "block"
                     // form.reset(); // Reset form fields after submission
                     form.style.display = "none";
