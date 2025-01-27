@@ -15,8 +15,8 @@
         color: #fcb117 !important;
         letter-spacing: 2px;
         line-height: 1.4em;
-        margin-top: 100px;
-        margin-bottom: 50px;
+        max-width: 1100px;
+        margin: 100px auto 50px;
     }
     h2 {
         font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
@@ -26,6 +26,8 @@
         color: #c3546b !important;
         letter-spacing: 3px;
         line-height: 1.2em;
+        max-width: 1100px;
+        margin: 0 auto;
     }
     h3 {
         font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif;
@@ -35,7 +37,37 @@
         color: #6b6b6b !important;
         letter-spacing: 2px;
         line-height: 1.4em;
+        max-width: 1100px;
+        margin: 0 auto;
     }
+}
+
+.images-gallery {
+    .imageGallery1 {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .imageGallery1> * {
+        flex: 1 1 calc(20% - 20px); /* Each item takes 25% of the row width minus the gap */
+        max-width: calc(25% - 20px); /* Optional: Prevent items from exceeding 25% */
+        box-sizing: border-box; /* Ensures padding/margin are included in size */
+        overflow: hidden;
+
+        @media only screen and (max-width: 1199px) {
+            flex: none;
+        }
+        @media only screen and (max-width: 769px) {
+            max-width: calc(50% - 20px);
+        }
+
+        img {
+            max-width: 206px;
+        }
+      }
 }
 
 @media only screen and (max-width: 767px) {

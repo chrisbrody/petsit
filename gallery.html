@@ -32,6 +32,7 @@ Wags & Whiskers by Cori & Brody
      <!-- Stylesheets -->
      <link rel="stylesheet" href="./css/bootstrap.min.css">
      <link rel="stylesheet" href="./css/main.min.css">
+     <link href="./css/lightbox.min.css" rel="stylesheet">
      <link rel="stylesheet" href="./css/gallery.min.css">
    </head>
  
@@ -70,12 +71,12 @@ Wags & Whiskers by Cori & Brody
                 </div>
             </div>
         </nav>
- 
+
         <section class="contact" id="gallery">
-          <div class="container" style="height: 1000vh;">
+          <div class="container">
             <div class="row">
               <div class="col">
-                  <h1>professional pet sitters</h1>
+                  <h1>Global pet sitters</h1>
                   <h2>Happy Paws Photo Gallery</h2>
                   <h3>A glimpse at all of our furry clients</h3>
               </div>
@@ -83,15 +84,69 @@ Wags & Whiskers by Cori & Brody
           </div>
         </section>
 
+         <section class="images-gallery">
+             <div class="imageGallery1">
+                 <a href="./img/testimonials/am1.jpg" title="Vasco &amp; Brody chilling on the deck"><img src="./img/testimonials/am1-min.jpg" alt="" /></a>
+                 <a href="./img/testimonials/am2.jpg" title="Vasco &amp; Brody walking in Amsterdam"><img src="./img/testimonials/am2-min.jpg" alt="" /></a>
+                 <a href="./img/testimonials/am3.jpg" title="Vasco &amp; Brody walking in Amsterdam"><img src="./img/testimonials/am3-min.jpg" alt="" /></a>
+                 <a href="./img/testimonials/buff1.JPG" title="Lola &amp; Brody kissing"><img src="./img/testimonials/buff1-min.jpg" alt="" /></a>
+                 <a href="./img/testimonials/buff2.JPG" title="Paloma &amp; Brody cuddling"><img src="./img/testimonials/buff2-min.jpg" alt="" /></a>
+                 <a href="./img/testimonials/hi1.png" title="Caption for gallery item"><img src="./img/testimonials/hi1-min.png" alt="" /></a>
+                 <a href="./img/testimonials/hi2.png" title="Caption for gallery item"><img src="./img/testimonials/hi2-min.png" alt="" /></a>
+                 <a href="./img/testimonials/hi3.png" title="Caption for gallery item"><img src="./img/testimonials/hi3-min.png" alt="" /></a>
+                 <a href="./img/testimonials/hi4.png" title="Caption for gallery item"><img src="./img/testimonials/hi4-min.png" alt="" /></a>
+                 <a href="./img/testimonials/no1.jpg" title="Caption for gallery item"><img src="./img/testimonials/no1-min.jpg" alt="" /></a>
+                 <a href="./img/testimonials/no2.jpg" title="Caption for gallery item"><img src="./img/testimonials/no2-min.jpg" alt="" /></a>
+                 <a href="./img/testimonials/no3.jpg" title="Caption for gallery item"><img src="./img/testimonials/no3-min.jpg" alt="" /></a>
+                 <a href="./img/testimonials/no4.jpg" title="Caption for gallery item"><img src="./img/testimonials/no4-min.jpg" alt="" /></a>
+
+                 <a href="./img/testimonials/hi5.png" title="Caption for gallery item"><img src="./img/testimonials/hi5-min.png" alt="" /></a>
+                 <a href="./img/testimonials/mt1.PNG.png" title="Caption for gallery item"><img src="./img/testimonials/mt1-min.png" alt="" /></a>
+                 <a href="./img/testimonials/am4.jpg" title="Caption for gallery item"><img src="./img/testimonials/am4-min.jpg" alt="" /></a>
+                 <a href="./img/testimonials/buff3.PNG" title="Caption for gallery item"><img src="./img/testimonials/buff3-min.PNG" alt="" /></a>
+             </div>
+         </section>
+
      </main>
- 
+
+     <footer id="contact">
+         <div class="contact-wrapper text-center p-4">
+             <!-- Image -->
+             <div class="mb-3">
+                 <img
+                         src="./img/contact.png"
+                         alt="Contact Icon"
+                         class="img-fluid"
+                         style="width: 90px; height: 90px;"
+                 >
+             </div>
+
+             <!-- Heading -->
+             <h4 class="mb-3">Contact Us</h4>
+
+             <!-- Contact Details -->
+             <div>
+                 <p>
+                     <a href="tel:5555555555" class="text-decoration-none">Cori & Brody: 555-555-5555</a>
+                 </p>
+                 <p>
+                     <a href="mailto:Cori&Brody@gmail.com" class="text-decoration-none">Cori&Brody@gmail.com</a>
+                 </p>
+             </div>
+         </div>
+         <div class="copy">
+             <p>&copy; Groundworks Development <span id="currentYear"></span></p>
+         </div>
+     </footer>
+
    </body>
- 
+
    <script src="js/jquery-3.6.3.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script src="js/main.js"></script>
+   <script src="./js/lightbox.min.js"></script>
    <script>
- 
+       new SimpleLightbox({elements: '.imageGallery1 a'});
    </script>
- 
- </html>
+
+</html>

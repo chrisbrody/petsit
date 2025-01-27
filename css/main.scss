@@ -83,6 +83,9 @@ body {
     // SECTION
     section {
       padding-top: 100px;
+      &.images-gallery {
+        padding-top: 25px;
+      }
     }
     
     // CALL TO ACTION
