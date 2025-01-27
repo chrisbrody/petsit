@@ -48,6 +48,13 @@ Wags & Whiskers by Cori & Brody
       @media (max-width: 768px) {
         .carousel {
           width: 100%;
+          max-height: 300px;
+        }
+        .carousel img {
+          max-height: 300px!important;
+        }
+        .mob-mb-50 {
+          margin-bottom: 25px;
         }
       }
 
@@ -61,9 +68,9 @@ Wags & Whiskers by Cori & Brody
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <div class="container">
               <!-- Logo -->
-              <a class="navbar-brand" href="./index.html">
-                  <img src="https://sarashappypaws.com/wp-content/uploads/2019/08/SarasHappyPawsLogo-colorhorizontal.png" alt="Sara's Happy Paws">
-              </a>
+            <a class="navbar-brand" href="./index.html">
+              <img src="./img/logo.png" alt="Global Pet Sitters">
+            </a>
               
               <!-- Toggle Button for Mobile -->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,7 +101,7 @@ Wags & Whiskers by Cori & Brody
         <div class="container">
           <div class="row">
             <!-- Image Column -->
-            <div class="offset-md-1 col-md-6">
+            <div class="offset-md-1 col-md-5">
               <div id="testimonialCarousel-hi" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-inner">
                   <!-- First Image -->
@@ -132,9 +139,9 @@ Wags & Whiskers by Cori & Brody
             </div>
           
             <!-- Text and Button Column -->
-            <div class="col-md-4">
+            <div class="col-md-5">
               <h1><a href="./contact-us.html">Highly-Trusted Pet Sitters</a></h1>
-              <p>Hi! We’re Cori, a college librarian (42), and Brody, a computer programmer (37) from upstate New York, USA. We’re passionate about spending time with animals and would love to care for your pets!</p>
+              <p class="mob-mb-50">Hi! We’re Cori, a college librarian (42), and Brody, a computer programmer (37) from upstate New York, USA. We’re passionate about spending time with animals and would love to care for your pets!</p>
               <a href="./contact-us.html" class="btn btn-primary">Contact Us</a>
             </div>
           </div>        
@@ -159,48 +166,6 @@ Wags & Whiskers by Cori & Brody
           </div>
         </div>
       </section>
-      
-
-      <section id="certificates">
-        <div class="container">
-          <div class="row">
-              <div class="col">
-                <div class="grid">
-                  <div class="grid-item">
-                    <img src="./img/cert1.jpg" class="img-fluid" />
-                  </div>
-                  <div class="grid-item">
-                    <img src="./img/cert2.png" class="img-fluid" />
-                  </div>
-                  <div class="grid-item">
-                    <img src="./img/cert3.png" class="img-fluid" />
-                  </div>
-                  <div class="grid-item">
-                    <img src="./img/cert4.png" class="img-fluid" />
-                  </div>
-                  <div class="grid-item">
-                    <img src="./img/cert5.png" class="img-fluid" />
-                  </div>
-                  <div class="grid-item">
-                    <img src="./img/cert6.jpg" class="img-fluid" />
-                  </div>
-                  <div class="grid-item">
-                    <img src="./img/cert7.png" class="img-fluid" />
-                  </div>
-                  <div class="grid-item">
-                    <img src="./img/cert8.jpg" class="img-fluid" />
-                  </div>
-                  <div class="grid-item">
-                    <img src="./img/cert9.png" class="img-fluid" />
-                  </div>
-                  <div class="grid-item">
-                    <img src="./img/cert10.png" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>      
 
       <section id="faq">
         <h1>FAQ</h1>
@@ -213,49 +178,47 @@ Wags & Whiskers by Cori & Brody
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading1">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                      Are You Bonded & Insured?
+                      What types of pets do you care for?
                     </button>
                   </h2>
                   <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionRow1">
                     <div class="accordion-body">
-                      <p>Yes, we are!</p>
-                      <p>Additionally, we are experienced in pet first aid /CPR, certified in pet nutrition, and Sara is a certified professional pet sitter through Pet Sitters International.</p>
+                      <p>We specialize in caring for dogs and cats, but feel free to reach out if you have other pets—we’re happy to discuss their needs!</p>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading2">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                      How Long have you been in business?
+                      How Long have you been professionally sitting?
                     </button>
                   </h2>
                   <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionRow1">
                     <div class="accordion-body">
-                      <p>Since 2016!</p>
+                      <p>Since 2019!</p>
 
-                      <p>Sara Started Sara's Happy Paws her senior year of high school as a service project. We never could have imagined what it would grow into today!</p>
+                      <p>Cori and Brody have been traveling together pet sitting for 6 years!</p>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading3">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                      Do you offer 24 hour care?
+                      Do you offer pet-sitting services internationally?
                     </button>
                   </h2>
                   <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionRow1">
                     <div class="accordion-body">
-                      <p>We do not.</p>
-                      <p>Our overnight stays include being at your home for a portion of the day and overnight. We may be gone up to 9 hours during the day.</p>
+                      <p>Yes! We travel both domestically and internationally to provide care for your pets, ensuring they’re comfortable and well looked after while you’re away.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        
+
           <!-- Second Row -->
-          <div class="grid-row">
+          <!-- <div class="grid-row">
             <div class="grid-item">
               <div class="accordion" id="accordionRow2">
                 <div class="accordion-item">
@@ -298,7 +261,7 @@ Wags & Whiskers by Cori & Brody
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>        
         
       </section>
@@ -331,7 +294,7 @@ Wags & Whiskers by Cori & Brody
         </div>
       </div>
       <div class="copy">
-        <p>&copy; <span id="currentYear"></span></p>
+        <p>&copy; Groundworks Development <span id="currentYear"></span></p>
       </div>
     </footer>
 

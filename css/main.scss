@@ -64,10 +64,11 @@ body {
       }
 
       .navbar-brand {
+        padding: 0;
         img {
-          width: 300px;
+          width: 200px;
           @media screen and (max-width: 600px) {
-            width: 200px;
+            width: 150px;
           }
         }
       }
@@ -98,27 +99,6 @@ body {
       }
     }
 
-    // CERTIFICATE IMAGES
-    #certificates {
-
-      .grid {
-        grid-template-columns: repeat(5, 1fr);
-        align-items: center;
-        gap: 10px;
-        justify-content: center;
-
-        .grid-item {
-          text-align: center;
-
-          img {
-            height: 200px;
-            width: 200px;
-            margin: 0 auto;
-          }
-        }
-      }
-    }
-
     // FAQ
     #faq {
       margin-bottom: 100px;
@@ -126,9 +106,9 @@ body {
         text-align: center;
       }
       .grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 50px;
-        padding: 0 50px;
+        padding: 0 200px;
 
         .grid-row {
 
@@ -244,6 +224,9 @@ body {
       // SECTION
       section {
         padding-top: 75px;
+        &#about {
+          padding-top: 25px;
+        }
       }
 
       // CALL TO ACTION
@@ -252,14 +235,6 @@ body {
         h1 {
           font-size: 26px;
           padding-top: 25px;
-        }
-      }
-
-      // CERTIFICATE IMAGES
-      #certificates {
-
-        .grid {
-          grid-template-columns: repeat(2, 1fr);
         }
       }
 
@@ -278,6 +253,15 @@ body {
       .contact-wrapper {
         width: 75%;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+
+    main {
+      padding: 0;
     }
   }
 }

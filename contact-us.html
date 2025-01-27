@@ -34,6 +34,25 @@ Wags & Whiskers by Cori & Brody
      <link rel="stylesheet" href="./css/main.min.css">
      <link rel="stylesheet" href="./css/form.min.css">
      <link rel="stylesheet" href="./css/contact.min.css">
+     <style>
+         #contact-form button {
+             width: fit-content;
+         }
+
+         @media screen and (max-width: 769px) {
+             body main section.contact {
+                 padding-top: 125px;
+             }
+             .contact h1 {
+                 font-size: 32px;
+             }
+             #contact-form button {
+                 margin-bottom: 50px;
+                 width: 100%;
+                 text-align: center;
+             }
+         }
+     </style>
    </head>
  
    <body>
@@ -44,7 +63,7 @@ Wags & Whiskers by Cori & Brody
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand" href="./index.html">
-                    <img src="https://sarashappypaws.com/wp-content/uploads/2019/08/SarasHappyPawsLogo-colorhorizontal.png" alt="Sara's Happy Paws">
+                    <img src="./img/logo.png" alt="Global Pet Sitters">
                 </a>
                 
                 <!-- Toggle Button for Mobile -->
@@ -164,7 +183,7 @@ Wags & Whiskers by Cori & Brody
              </div>
          </div>
          <div class="copy">
-             <p>&copy; <span id="currentYear"></span></p>
+             <p>&copy; Groundworks Development <span id="currentYear"></span></p>
          </div>
      </footer>
  
