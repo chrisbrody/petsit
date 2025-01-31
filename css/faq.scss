@@ -8,18 +8,19 @@ body{
                 padding-top: 50px;
 
                 .grid {
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: 400px 1fr;
                     padding: 0 50px;
+
+                    .sticky {
+                        position: sticky;
+                        top: 100px;
+                    }
                 }
             }
         } 
     }
 } 
-.carousel {
-    height: 400px;
-    width: 50%;
-    margin: 0 auto;
-}
+
 .carousel img {
     max-height: 400px;
 }

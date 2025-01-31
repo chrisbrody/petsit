@@ -1,12 +1,21 @@
+// Color Variables
+$primary-color: rgb(222, 99, 26);
+$secondary-color: rgb(55, 156, 152);
+$header-color: rgba(0, 0, 0, 0.65);
+$warm-grey:rgb(163,163,163);
+
 body {
 
   main {
     padding-top: 50px;
 
     // REUSEABLE
-    a, a:hover {
-      color: #c3546b;
+    a {
+      color: $primary-color;
       text-decoration: none;
+    }
+    a:hover {
+      color: $header-color;
     }
     h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
       color: inherit;
@@ -16,7 +25,7 @@ body {
       font-weight: 700;
       text-transform: uppercase;
       font-size: 42px;
-      color: #fcb117 !important;
+      color: $header-color !important;
       letter-spacing: 3px;
       line-height: 1.4em;
     }
@@ -35,7 +44,7 @@ body {
       font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif !important;
       font-weight: 800 !important;
       text-transform: uppercase !important;
-      background-color: #60c4cb;
+      background-color: $secondary-color;
       padding: 20px 30px;
     }
 
@@ -47,7 +56,7 @@ body {
     .opener {
       background-size: initial;
       background-position: center bottom 0px;
-      background-image: url(../img/vet-01-1.png), linear-gradient(221deg, #c3546b 0%, rgba(255, 112, 0, 0.2) 42%) !important;
+      background-image: url(../img/vet-01-1.png), linear-gradient(221deg, $primary-color 0%, rgba(255, 112, 0, 0.2) 42%) !important;
       background-repeat: no-repeat;
       height: 350px;
       padding-bottom: 0px;
@@ -58,7 +67,7 @@ body {
           font-weight: 800;
           text-transform: uppercase;
           font-size: 14px;
-          color: #fcb117 !important;
+          color: $primary-color !important;
           letter-spacing: 2px;
           line-height: 1.4em;
           max-width: 1100px;
@@ -69,7 +78,7 @@ body {
           font-weight: 700;
           text-transform: uppercase;
           font-size: 60px;
-          color: #c3546b !important;
+          color: $header-color !important;
           letter-spacing: 3px;
           line-height: 1.2em;
           max-width: 1100px;
@@ -89,9 +98,13 @@ body {
     }
     @media only screen and (max-width: 767px) {
       .opener {
-          background-image: url(../img/vet-03.png), linear-gradient(180deg, #c3546b 36%, rgba(255, 112, 0, 0) 100%) !important;
+          background-image: url(../img/vet-03.png), linear-gradient(180deg, $primary-color 36%, rgba(255, 112, 0, 0) 100%) !important;
           background-size: cover;
           height: 500px;
+
+          &.opener-md {
+            height: 400px;
+          }
 
           &.opener-sm {
             height: 300px;
@@ -118,7 +131,7 @@ body {
           padding-right: 15px;
 
           .nav-link.active {
-            color: #c3546b;
+            color: $primary-color;
           }
         }          
       }
@@ -173,6 +186,10 @@ body {
     // ABOUT
     #about {
 
+      h2 {
+        color: $header-color;
+      }
+
       .flex {
         display: flex;
         gap: 25px;
@@ -206,7 +223,7 @@ body {
                 border-radius: 0;
                 text-transform: uppercase;
                 font-size: 18px;
-                color: #c3546b !important;
+                color: $header-color !important;
                 letter-spacing: 2px;
                 line-height: 1.2em;
                 font-weight: 500;
@@ -235,7 +252,7 @@ body {
     }
 
     #testimonials {
-      background-image: linear-gradient(180deg, #60c4cb 0%, rgba(7, 136, 150, 0.48) 100%) !important;
+      background-image: linear-gradient(180deg, $secondary-color 0%, rgba(55, 156, 152, 0) 100%) !important;
       padding: 100px 0;
 
       h1 {
@@ -271,7 +288,7 @@ body {
   #contact {
     background-size: contain;
     background-position: center top;
-    background-image: url(../img/bg-3.png), linear-gradient(221deg, #c3546b 0%, rgba(255, 112, 0, 0.29) 100%) !important;
+    background-image: url(../img/bg-3.png), linear-gradient(221deg, $primary-color 0%, rgba(255, 112, 0, 0.29) 100%) !important;
     background-repeat: no-repeat;
     padding-top: 69px;
     padding-bottom: 100px;
@@ -295,7 +312,7 @@ body {
 
       a {
         font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif;
-        color: #fcb117 !important;
+        color: $secondary-color !important;
       }
     }
 
@@ -331,7 +348,8 @@ body {
       #cta {
 
         h1 {
-          font-size: 26px;
+          font-size: 45px;
+          margin-bottom: 15px;
         }
       }
 
