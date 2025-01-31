@@ -1,0 +1,1 @@
+body main section#faq .grid{grid-template-columns:repeat(2, 1fr)}@media screen and (max-width: 769px){body main section#faq{padding-top:0}body main section#faq .grid{padding:0 15px;grid-template-columns:repeat(1, 1fr)}}/*# sourceMappingURL=faq.min.css.map */

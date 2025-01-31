@@ -1,0 +1,69 @@
+.about-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px;
+    align-items: start;
+
+    max-width: 1100px;
+    margin: 0 auto;
+
+    .a-bold {
+        a {
+            font-weight: bold;
+        }
+    }
+}
+
+.about-text {
+  flex: 1.5;  /* Takes up 60% of space, allowing for image resizing */
+  min-width: 200px; /* Prevent from becoming too narrow */
+  p {
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+  }
+}
+
+
+.about-images {
+  flex: 1;   /* Takes up 40% of space */
+    min-width: 200px; /* Prevent from becoming too narrow */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* Center images horizontally */
+}
+
+  .image-container{
+      width: 48%; /* Two images on a row */
+      max-width: 200px;
+      aspect-ratio: 1/1; /* Enforces a square aspect ratio */
+      overflow: hidden;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease; /* Smooth transitions */
+      }
+       &:hover img {
+          transform: scale(1.1); /* Zoom effect on hover */
+      }
+  }
+
+  @media (max-width: 768px) {
+     .about-content {
+       flex-direction: column; /* Stack items vertically on smaller screens */
+     }
+     .about-images{
+       justify-content: center; /* Center images on mobile */
+     }
+ 
+      .image-container{
+        width: 48%; /* Two images on a row */
+      }
+ }
