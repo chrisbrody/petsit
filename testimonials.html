@@ -19,78 +19,7 @@
      <!-- Stylesheets -->
      <link rel="stylesheet" href="./css/bootstrap.min.css">
      <link rel="stylesheet" href="./css/main.min.css">
-
-       <style>
-           .testimonials-grid {
-               display: grid;
-               grid-template-columns: repeat(2, 1fr);
-               gap: 20px;
-               align-items: start; /* Ensures cards align at the top and don't stretch */
-           }
-           .testimonial-column {
-               display: grid
-           ;
-               gap: 30px;
-           }
-
-           .testimonial-card {
-               background: white;
-               padding: 24px;
-               border-radius: 12px;
-               box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-               transition: transform 0.2s ease, box-shadow 0.2s ease;
-               display: flex;
-               flex-direction: column; /* Allow the content to flow naturally */
-           }
-
-
-           .testimonial-content {
-               font-size: 16px;
-               line-height: 1.6;
-               color: #333;
-               margin-bottom: 16px;
-           }
-
-           .carousel {
-               float: left;
-               margin-right: 20px;
-               margin-bottom: 10px;
-               height: 275px;
-               width: 250px;
-           }
-           .carousel img {
-               max-height: 275px;
-           }
-
-
-           .testimonial-content p {
-               text-align: justify;
-           }
-
-           .testimonial-author {
-               font-weight: 600;
-               color: #1a1a1a;
-               display: flex;
-               align-items: center;
-               gap: 8px;
-           }
-
-           .testimonial-location {
-               color: #666;
-               font-size: 14px;
-           }
-
-           @media (max-width: 768px) {
-               .carousel {
-                   width: 100%;
-               }
-               .testimonials-grid {
-                   grid-template-columns: 1fr;
-                   grid-auto-flow: row;
-               }
-           }
-
-       </style>
+     <link rel="stylesheet" href="./css/testimonials.min.css">
    </head>
 
    <body>
@@ -148,41 +77,10 @@
                       <!-- Kauai, HI USA -->
                       <div class="testimonial-card">
                           <div class="testimonial-content">
-                              <div id="testimonialCarousel-hi" class="carousel slide" data-bs-ride="false">
-                                  <div class="carousel-inner">
-                                      <!-- First Image -->
-                                      <div class="carousel-item active">
-                                          <img src="./img/testimonials/hi1-min.png" class="d-block w-100" alt="Wispy & Hadara" />
-                                      </div>
-                                      <!-- Second Image -->
-                                      <div class="carousel-item">
-                                          <img src="./img/testimonials/hi2-min.png" class="d-block w-100" alt="Wispy, Hadara & Brody" />
-                                      </div>
-                                      <!-- Third Image -->
-                                      <div class="carousel-item">
-                                          <img src="./img/testimonials/hi3-min.png" class="d-block w-100" alt="Hadara & Cori" />
-                                      </div>
-                                      <!-- Fourth Image -->
-                                      <div class="carousel-item">
-                                          <img src="./img/testimonials/hi4-min.png" class="d-block w-100" alt="Wispy & Cori" />
-                                      </div>
-                                      <!-- Fifth Image -->
-                                      <div class="carousel-item">
-                                          <img src="./img/testimonials/hi5-min.png" class="d-block w-100" alt="Wispy, Hadara & Brody" />
-                                      </div>
-                                  </div>
-
-                                  <!-- Carousel Controls -->
-                                  <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel-hi" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                  </button>
-                                  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel-hi" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                  </button>
+                              <div class="carousel">
+                                  <img src="./img/testimonials/24.jpg" class="d-block w-100" alt="Wispy & Hadara" />
                               </div>
-                              <p>We recently had the pleasure of having Cori and Brody sit for our home in Kauai from May 6th to May 12th. They proved to be exceptional sitters, providing outstanding care not only for our home but also for our two beloved labs, Hadra and Wispy. Hadara, our 14-year-old lab, is experiencing some aging challenges, and Cori and Brody went above and beyond to address and correct these issues with compassion and expertise. Their attentive and proactive approach made a significant difference in Hadara's well-being, for which we are incredibly grateful. Cori and Brody arrived a bit earlier and stayed a bit later than the scheduled dates, giving us the opportunity to get to know them well. Over this time, we formed a wonderful friendship with this dynamic duo. Their reliability, kindness, and genuine love for animals make them standout sitters.</p>
+                              <p>We recently had the pleasure of having Cori and Brody sit for our home in Kauai from May 6th to May 12th. They proved to be exceptional sitters, providing outstanding care not only for our home but also for our two beloved labs, Hadra and Wispy. Hadara, our 14-year-old lab, is experiencing some aging challenges, and Cori and Brody went above and beyond to address and correct these issues with compassion and expertise. Their attentive and proactive approach made a significant difference in Hadara's well-being, for which we are incredibly grateful. Cori and Brody arrived a bit earlier and stayed a bit later than the scheduled dates, giving us the opportunity to get to know them well. Over this time, we formed a wonderful friendship with this dynamic duo. Their reliability, kindness, and genuine love for animals make them standout sitters. We highly recommend Cori and Brody for anyone seeking dedicated, responsible, and caring house and pet sitters. They truly set the bar high and have our wholehearted endorsement!</p>
                           </div>
                           <div class="testimonial-author">
                               Romeo & Andrew
@@ -193,37 +91,10 @@
                       <!-- New Orleans, LA USA -->
                       <div class="testimonial-card">
                           <div class="testimonial-content">
-                              <div id="testimonialCarousel-no" class="carousel slide" data-bs-ride="false">
-                                  <div class="carousel-inner">
-                                      <!-- First Image -->
-                                      <div class="carousel-item active">
-                                          <img src="./img/testimonials/no1-min.jpg" class="d-block w-100" alt="New Orleans Sit Einstein" />
-                                      </div>
-                                      <!-- Second Image -->
-                                      <div class="carousel-item">
-                                          <img src="./img/testimonials/no2-min.jpg" class="d-block w-100" alt="New Orleans Sit Max" />
-                                      </div>
-                                      <!-- Third Image -->
-                                      <div class="carousel-item">
-                                          <img src="./img/testimonials/no3-min.jpg" class="d-block w-100" alt="New Orleans Sit Max" />
-                                      </div>
-                                      <!-- Fourth Image -->
-                                      <div class="carousel-item">
-                                          <img src="./img/testimonials/no4-min.jpg" class="d-block w-100" alt="New Orleans Sit Max & Einstein" />
-                                      </div>
-                                  </div>
-
-                                  <!-- Carousel Controls -->
-                                  <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel-no" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                  </button>
-                                  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel-no" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                  </button>
+                              <div class="carousel">
+                                  <img src="./img/testimonials/13.JPG" class="d-block w-100" alt="New Orleans Sit Cori, Einstein & Magnus" />
                               </div>
-                              <p>Cori and Brody are wonderful sitters and people! They stayed in our home with our two dogs for almost a week and left the house cleaner than they found it! We are so grateful to them as we were able to relax on our trip knowing our dogs were in capable hands. They always sent great photo updates and genuinely cared about our dogs happiness. That's what's is most important! We've already invited them back for another sit!</p>
+                              <p>Cori and Brody are wonderful sitters and people! They stayed in our home with our two dogs for almost a week and left the house cleaner than they found it! We are so grateful to them as we were able to relax on our trip knowing our dogs were in capable hands. They always sent great photo updates and genuinely cared about our dogs happiness. That’s what’s is most important! We’ve already invited them back for another sit! 10000% recommend!</p>
                           </div>
                           <div class="testimonial-author">
                               Katharine & Andrew
@@ -234,6 +105,9 @@
                       <!-- Mersch, Luxembourg -->
                       <div class="testimonial-card">
                           <div class="testimonial-content">
+                              <div class="carousel">
+                                  <img src="./img/testimonials/1b.jpg" class="d-block w-100" alt="Wispy & Hadara" />
+                              </div>
                               <p>Cori and Brody were wonderful housesitters which is not a small undertaking with three dogs, two of which are large! They took Larry for walks regularly and otherwise took care of them as if they always had. We got regular photos and it was a successful sit from both sides despite our wonderful Luxemburgish weather which finally rallied toward the middle of their stay.</p>
                           </div>
                           <div class="testimonial-author">
@@ -246,35 +120,8 @@
                       <!-- Amsterdam, Netherlands -->
                       <div class="testimonial-card">
                           <div class="testimonial-content">
-                              <div id="testimonialCarousel-am" class="carousel slide" data-bs-ride="false">
-                                  <div class="carousel-inner">
-                                      <!-- First Image -->
-                                      <div class="carousel-item active">
-                                          <img src="./img/testimonials/am1-min.jpg" class="d-block w-100" alt="Image 1" />
-                                      </div>
-                                      <!-- Second Image -->
-                                      <div class="carousel-item">
-                                          <img src="./img/testimonials/am2-min.jpg" class="d-block w-100" alt="Image 2" />
-                                      </div>
-                                      <!-- Third Image -->
-                                      <div class="carousel-item">
-                                          <img src="./img/testimonials/am3-min.jpg" class="d-block w-100" alt="Image 3" />
-                                      </div>
-                                      <!-- Fourth Image -->
-                                      <div class="carousel-item">
-                                          <img src="./img/testimonials/am4-min.jpg" class="d-block w-100" alt="Image 3" />
-                                      </div>
-                                  </div>
-
-                                  <!-- Carousel Controls -->
-                                  <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel-am" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                  </button>
-                                  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel-am" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                  </button>
+                              <div class="carousel image-small">
+                                  <img src="./img/testimonials/2.jpg" class="d-block w-100" alt="Brody & Vasco at the park" />
                               </div>
                               <p>Cori and Brody recently took care of our home and fox terrier Vasco as we were traveling. They are such a lovely couple, and really wonderful housesitters. Their attention to Vasco was wonderful as we saw in the frequent images they sent, and our house was actually cleaner when we came back then when we left! We can highly recommend Cori and Brody and even though we will cross paths with them again here.</p>
                           </div>
@@ -286,57 +133,43 @@
 
                       <!-- Buffalo, NY USA -->
                       <div class="testimonial-card">
-                      <div class="testimonial-content">
-                          <div id="testimonialCarousel-buff" class="carousel slide" data-bs-ride="false">
-                              <div class="carousel-inner">
-                                  <!-- First Image -->
-                                  <div class="carousel-item active">
-                                      <img src="./img/testimonials/buff1-min.jpg" class="d-block w-100" alt="Buffalo Sit Lola" />
-                                  </div>
-                                  <!-- Second Image -->
-                                  <div class="carousel-item">
-                                      <img src="./img/testimonials/buff2-min.jpg" class="d-block w-100" alt="Buffalo Sit Paloma" />
-                                  </div>
-                                  <!-- Third Image -->
-                                  <div class="carousel-item">
-                                      <img src="./img/testimonials/buff3-min.png" class="d-block w-100" alt="Buffalo Sit Paloma" />
-                                  </div>
+                          <div class="testimonial-content">
+                              <div class="carousel">
+                                  <img src="./img/testimonials/21.JPG" class="d-block w-100" alt="Brody & Paloma" />
                               </div>
-
-                              <!-- Carousel Controls -->
-                              <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel-buff" data-bs-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Previous</span>
-                              </button>
-                              <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel-buff" data-bs-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Next</span>
-                              </button>
+                              <p>Our entire experience with Cori and Brody was delightful. They are both smart, thoughtful, and engaging and won over our two dogs the minute they walked into the house. The regular contact and photos we received from them while away were comforting and appreciated. Upon our return, we found the house in excellent condition, and the dogs a trifle disappointed that Cori and Brody were gone! We are so happy that they joined us the night prior to our trip- truly enjoyable to get to know this lovely couple! Hopefully our paths will cross again.</p>
                           </div>
-                          <p>Our entire experience with Cori and Brody was delightful. They are both smart, thoughtful, and engaging and won over our two dogs the minute they walked into the house. The regular contact and photos we received from them while away were comforting and appreciated. Upon our return, we found the house in excellent condition, and the dogs a trifle disappointed that Cori and Brody were leaving!</p>
+                          <div class="testimonial-author">
+                              Sally & Robert
+                              <span class="testimonial-location">• Buffalo, NY, USA</span>
+                          </div>
                       </div>
-                      <div class="testimonial-author">
-                          Sally & Robert
-                          <span class="testimonial-location">• Buffalo, NY, USA</span>
-                      </div>
-                  </div>
 
                       <!-- Montreal, Quebec Canada -->
                       <div class="testimonial-card">
                           <div class="testimonial-content">
-                              <div id="testimonialCarousel-no" class="carousel">
-                                  <div class="carousel-inner">
-                                      <!-- First Image -->
-                                      <div class="carousel-item active">
-                                          <img src="./img/testimonials/mt1-min.png" class="d-block w-100" alt="Lenore - Montreal" />
-                                      </div>
-                                  </div>
+                              <div class="carousel image-small">
+                                  <img src="./img/testimonials/4.jpg" class="d-block w-100" alt="Lenore - Montreal" />
                               </div>
-                              <p>I absolutely recommend Cori and Brody as petsitters! I came home to a happy cat and a clean home. Cori was very communicative and went out of her way to make sure she was properly taking care of Lenore, sending me cat photos and check ins and asking for advice. They were very respectful, accommodating, and enthusiastic petsitters, and I hope to have them back in the future.</p>
+                              <p>I absolutely recommend Cori and Brody as petsitters! I came home to a happy cat and a clean home. Cori was very communicative and went out of her way to make sure she was properly taking care of Lenore, sending me cat photos and check ins and asking for advice. They were very respectful, accommodating, and enthusiastic petsitters, and I hope to have them back in the future. I wholeheartedly recommend them for your pet and home!</p>
                           </div>
                           <div class="testimonial-author">
                               Sandra
                               <span class="testimonial-location">• Montreal, Quebec, Canada</span>
+                          </div>
+                      </div>
+
+                      <!-- Potsdam, NY USA -->
+                      <div class="testimonial-card">
+                          <div class="testimonial-content">
+                              <div class="carousel image-small">
+                                  <img src="./img/testimonials/5.jpg" class="d-block w-100" alt="Tristian in the lawn" />
+                              </div>
+                              <p>Cori and Brody have been amazing pet sitters for our small senior dog, Tristan. They’ve watched him several times, and each time he comes back happy and well-cared for. It’s clear he feels loved and at home with them and doesn’t even want to leave. Highly recommend their pet-sitting services!</p>
+                          </div>
+                          <div class="testimonial-author">
+                              Maggie & Matt
+                              <span class="testimonial-location">• Potsdam, NY, USA</span>
                           </div>
                       </div>
                   </div>

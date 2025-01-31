@@ -1,0 +1,79 @@
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start; /* Ensures cards align at the top and don't stretch */
+
+    .testimonial-column {
+        display: grid;
+        gap: 30px;
+
+        .testimonial-card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column; /* Allow the content to flow naturally */
+
+            .testimonial-content {
+                font-size: 16px;
+                line-height: 1.6;
+                color: #333;
+                margin-bottom: 16px;
+
+                .carousel {
+                    float: left;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
+                    height: 275px;
+                    width: 250px;
+
+                    &.image-small {
+                        height: 175px;
+                    }
+                
+                    img {
+                        max-height: 275px;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                }
+
+                .testimonial-author {
+                    font-weight: 600;
+                    color: #1a1a1a;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+
+                .testimonial-location {
+                    color: #666;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .testimonials-grid .testimonial-column .testimonial-card .testimonial-content .carousel {
+        height: initial;
+        width: 100%;
+
+        &.image-small {
+            height: initial;
+        }
+    }
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+    }
+}
