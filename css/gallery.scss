@@ -1,3 +1,5 @@
+$primary-color: rgb(222, 99, 26);
+
 .images-gallery {
     .imageGallery1 {
         max-width: 1100px;
@@ -24,12 +26,4 @@
             max-width: 206px;
         }
       }
-}
-
-@media only screen and (max-width: 767px) {
-    #gallery {
-        background-image: url(../img/vet-03.png), linear-gradient(180deg, #c3546b 36%, rgba(255, 112, 0, 0) 100%) !important;
-        background-size: cover;
-        height: 500px;
-    }
 }

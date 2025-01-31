@@ -1,0 +1,66 @@
+.flex {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto; // Centering the content
+    gap: 30px;
+  
+    & > div {
+      flex: 1;
+  
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #333; // Add a default color for headings
+      }
+  
+      ul {
+        list-style: none; // Remove default list styles
+        padding: 0;
+  
+        li {
+          margin-bottom: 10px;
+          line-height: 1.5;
+  
+          span {
+            font-weight: bold; // Make span bold for emphasis
+            color: #555; // Add a default color for span text
+            display: block;
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column; // Stack the sections on smaller screens
+      & > div {
+          margin-bottom: 20px;
+        }
+    }
+  }
+
+  body main #cta.opener {
+    height: 500px;
+    .grid {
+        grid-template-columns: 400px 1fr;
+        gap: 50px;
+        align-items: center;
+    }
+  }
+  body main .opener h1 {
+    color: rgba(0, 0, 0, 0.65) !important;
+    font-size: 42px;
+    margin: 0;
+  }
+  #cta .container {
+    padding-top: 50px;
+  }
+
+  @media (max-width: 768px) {
+    body main #cta.opener {
+      height: 800px;
+    }
+    
+    .mob-mb-50 {
+      margin-bottom: 25px;
+    }
+  }

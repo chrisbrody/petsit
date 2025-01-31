@@ -6,10 +6,12 @@ body{
             }
             &#faq{
                 padding-top: 50px;
+                max-width: 1320px;
+                margin: 0;
 
                 .grid {
                     grid-template-columns: 400px 1fr;
-                    padding: 0 50px;
+                    padding: 0;
 
                     .sticky {
                         position: sticky;
