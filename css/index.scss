@@ -44,6 +44,10 @@
         grid-template-columns: 400px 1fr;
         gap: 50px;
         align-items: center;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
     }
   }
   body main .opener h1 {
@@ -55,9 +59,15 @@
     padding-top: 50px;
   }
 
+  @media (max-width: 1024px) {
+    body main #cta.opener {
+      height: 950px;
+    }
+  }
+  
   @media (max-width: 768px) {
     body main #cta.opener {
-      height: 800px;
+      height: 850px;
     }
     
     .mob-mb-50 {
