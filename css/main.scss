@@ -92,6 +92,10 @@ body {
           background-image: url(../img/vet-03.png), linear-gradient(180deg, #c3546b 36%, rgba(255, 112, 0, 0) 100%) !important;
           background-size: cover;
           height: 500px;
+
+          &.opener-sm {
+            height: 300px;
+          }
   
           h2 {
               font-size: 45px;
@@ -351,7 +355,7 @@ body {
       padding-top: 0;
 
       .contact-wrapper {
-        width: 75%;
+        width: 80%;
       }
     }
   }
