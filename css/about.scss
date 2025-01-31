@@ -25,45 +25,54 @@
 
 
 .about-images {
-  flex: 1;   /* Takes up 40% of space */
+    position: sticky;
+    top: 100px;
+    flex: 1;   /* Takes up 40% of space */
     min-width: 200px; /* Prevent from becoming too narrow */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center; /* Center images horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Center images horizontally */
 }
 
-  .image-container{
-      width: 48%; /* Two images on a row */
-      max-width: 200px;
-      aspect-ratio: 1/1; /* Enforces a square aspect ratio */
-      overflow: hidden;
-      border-radius: 6px;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+.image-container{
+    width: 48%; /* Two images on a row */
+    max-width: 200px;
+    aspect-ratio: 1/1; /* Enforces a square aspect ratio */
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 0.3s ease; /* Smooth transitions */
-      }
-       &:hover img {
-          transform: scale(1.1); /* Zoom effect on hover */
-      }
-  }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Smooth transitions */
+    }
+    &:hover img {
+        transform: scale(1.1); /* Zoom effect on hover */
+    }
+}
 
-  @media (max-width: 768px) {
-     .about-content {
-       flex-direction: column; /* Stack items vertically on smaller screens */
-     }
-     .about-images{
-       justify-content: center; /* Center images on mobile */
-     }
- 
-      .image-container{
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        .about-text {
+            order: 2;
+            padding: 0 15px;
+            margin-bottom: 50px;
+        }
+    }
+    .about-images{
+        order: 1;
+        position: initial;
+        justify-content: center; /* Center images on mobile */
+    }
+
+    .image-container{
         width: 48%; /* Two images on a row */
-      }
- }
+    }
+}
