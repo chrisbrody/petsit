@@ -253,6 +253,9 @@ body {
     #testimonials {
       background-image: linear-gradient(180deg, $secondary-color 0%, rgba(55, 156, 152, 0) 100%) !important;
       padding: 100px 0;
+      @media screen and (max-width: 769px) {
+        padding: 100px 0 50px;
+      }
 
       h1 {
         font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif;
@@ -263,6 +266,7 @@ body {
         letter-spacing: 2px;
         line-height: 1.4em;
         margin-bottom: 30px;
+        margin-top: 54px;
       }
       h2 {
         font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
@@ -353,6 +357,10 @@ body {
 
         &.about-content {
           padding-top: 0;
+        }
+        
+        &.images-gallery, &.contact {
+          margin-bottom: 50px;
         }
         
       }

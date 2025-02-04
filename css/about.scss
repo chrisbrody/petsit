@@ -18,6 +18,12 @@
   p {
     line-height: 1.6;
     margin-bottom: 1.2em;
+
+    &.a-bold {
+        @media screen and (max-width: 769px) {
+            margin-bottom: 0;
+        }
+    }
   }
 }
 
