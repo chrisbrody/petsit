@@ -23,9 +23,6 @@ body{
     }
 } 
 
-.carousel img {
-    max-height: 400px;
-}
 @media screen and (max-width: 769px) {
     body{
         main {
@@ -40,10 +37,10 @@ body{
     }
     .carousel {
         width: 100%;
-        max-height: 300px;
+        max-height: 400px;
       }
       .carousel img {
-        max-height: 300px!important;
+        max-height: 400px!important;
       }
       .mob-mb-50 {
         margin-bottom: 25px;
