@@ -13,6 +13,10 @@ body {
     a {
       color: $primary-color;
       text-decoration: none;
+
+      &.link {
+        color: #379c98 !important;
+      }
     }
     a:hover {
       color: $header-color!important;
